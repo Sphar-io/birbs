@@ -1,0 +1,34 @@
+body{
+	background-color: #6C7A89;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+html {
+	position: relative;
+	min-height: 100%;
+}
+#canvasA{
+	display: block;
+	margin: 0px auto;
+	width: 90vh;
+	height: 90vh;
+	box-shadow: 10px 10px 50px #888888;
+	background: white;
+}
+.darkWell{
+	background: #2C3E50;
+	color: white;
+}
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: #222;
+  height: 30px;
+}
+select{
+	color: black;
+}
+input[type="text"]{
+	font:13px arial;
+}
