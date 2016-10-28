@@ -11,6 +11,10 @@ function world(width, height){
 			//rule 1
 			//rule 2
 			//rule 3
+		for(var i=0; i<this.birbsArray.length;i++){
+			var thisBirb = this.birbsArray[i];
+			thisBirb.x += thisBirb.vel.x;
+			thisBirb.y += thisBirb.vel.y;
 		}
 	}
 }
