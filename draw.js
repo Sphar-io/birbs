@@ -23,7 +23,6 @@ function createBirbs(number){
 		var xRand = Math.random()*thisWorld.w; //temporary, will be moved to offscreen
 		var yRand = Math.random()*thisWorld.h;
 		var thisBirb = new birb(xRand, yRand);
-		thisBirb.vel = {x: Math.random()*maxStartSpeed - maxStartSpeed/2,y: Math.random()*maxStartSpeed - maxStartSpeed/2};
 		thisWorld.birbsArray.push(thisBirb);
 	}
 }
@@ -33,5 +32,5 @@ function update(){
 	drawBirbs();
 	requestAnimationFrame(update);
 }
-createBirbs(100);
+createBirbs(10);
 update();
