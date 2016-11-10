@@ -1,6 +1,6 @@
-function birb(xi, yi){
+function birb(xi, yi, vxi, vyi){
 	this.x = xi;
 	this.y = yi;
-	this.vx = 0;
-	this.vy = 0;
+	this.vx = vxi;
+	this.vy = vyi;
 }	

@@ -5,6 +5,8 @@ canvas.height = Math.floor(.90*window.innerHeight);
 var birbSize = 3;
 var thisWorld = new world(canvas.width, canvas.height);
 var maxStartSpeed = 4;
+var verbose = true;
+
 function drawBirbs(){
 	ctx.fillStyle = "rgba(253,249,243, 0.35)";
 	ctx.fillRect(0,0,canvas.width, canvas.height);
@@ -15,6 +17,18 @@ function drawBirbs(){
 		ctx.arc(thisBirb.x,thisBirb.y,birbSize,0,2*Math.PI);
 		ctx.closePath();
 		ctx.fill();
+		if(verbose){
+			ctx.strokeStyle = "rgba(0,0,0,0.5)";
+			ctx.beginPath();
+			ctx.arc(thisBirb.x,thisBirb.y,thisWorld.bubbleSize,0,2*Math.PI);
+			ctx.closePath();
+			ctx.stroke();
+			ctx.strokeStyle = "rgba(255,0,0,0.5)";
+			ctx.beginPath();
+			ctx.arc(thisBirb.x,thisBirb.y,thisWorld.comfortableDistance,0,2*Math.PI);
+			ctx.closePath();
+			ctx.stroke();
+		}
 	}
 }
 
@@ -22,7 +36,10 @@ function createBirbs(number){
 	for(var i=0;i<number;i++){
 		var xRand = Math.random()*thisWorld.w; //temporary, will be moved to offscreen
 		var yRand = Math.random()*thisWorld.h;
-		var thisBirb = new birb(xRand, yRand);
+		var vxi = Math.random()*5+5;
+		var vyi = Math.random()*5+5;
+		var thisBirb = new birb(xRand, yRand, vxi, vyi);
+		console.log(thisBirb);
 		thisWorld.birbsArray.push(thisBirb);
 	}
 }
@@ -32,5 +49,5 @@ function update(){
 	drawBirbs();
 	requestAnimationFrame(update);
 }
-createBirbs(10);
+createBirbs(80);
 update();

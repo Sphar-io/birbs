@@ -4,27 +4,32 @@ function world(width, height){
 	this.h = height;
 	this.numBirbs = 10;
 	this.birbsArray = [];
+	this.bubbleSize = 100;
 	this.movePercentage = 200;
-	this.comfortableDistance = 50;
+	this.comfortableDistance = 10;
 	this.accelerationModifier = 10;
 
 	this.moveBirbs= function(){
 		//for loop to calculate shit
-		var com = calculateCOM();
-		var avgVel = calculateVel();
 
 		for (var i=0; i < this.birbsArray.length; i++) {
 			var birb = this.birbsArray[i];
 			//get flocking
-			var r1 = flock(birb, com);
+			var r1 = flock(birb);
 			//get avoiding
 			var r2 = avoid(birb);
+
 			//get matching velocity
-			var r3 = match(birb, avgVel);
+			var r3 = match(birb);
+			//{x:0, y:0};//
 			//get obstacles
 			//apply speeds
-			birb.vx = r1.x + r2.x + r3.x+2;
-			birb.vy = r1.y + r2.y + r3.y;
+			birb.vx = r1.x + r2.x + r3.vx;
+			birb.vy = r1.y + r2.y + r3.vy;
+		}
+		//mooooov
+		for (var i=0; i < this.birbsArray.length; i++) {
+			var birb = this.birbsArray[i];
 			birb.x += birb.vx;
 			birb.y += birb.vy;
 			if(birb.x > this.w){
@@ -33,60 +38,77 @@ function world(width, height){
 			if(birb.y > this.h){
 				birb.y = 0;
 			}
+			if(birb.x < 0){
+				birb.x = this.w;
+			}
+			if(birb.y < 0){
+				birb.y = this.h;
+			}
+		}
+}}
+
+function flock(birb){ //flocking
+	//find center of mass for neighborhood
+	com = {x:0, y:0};
+	var numNeighbors = 0;
+	for(var i=0; i<thisWorld.birbsArray.length; i++){
+		var otherBirb = thisWorld.birbsArray[i];
+		if(getDistance(birb, otherBirb) < thisWorld.bubbleSize && birb != otherBirb){ //if they are two different birbs within a certain distance
+			numNeighbors ++;
+			com.x += otherBirb.x;
+			com.y += otherBirb.y;
 		}
 	}
-}
-
-function calculateCOM(){
-	var com = {x:0, y:0}; //holds center of mass
-	for(var i=0; i<thisWorld.birbsArray.length;i++){
-		com.x += thisWorld.birbsArray[i].x;
-		com.y += thisWorld.birbsArray[i].y;
+	if(numNeighbors == 0){ //no other birbs. don't move
+		return com;
 	}
-
-	com.x /= thisWorld.birbsArray.length;
-	com.y /= thisWorld.birbsArray.length;
-
+	//calculate how to move bird towards percieved center
+	com.x /= numNeighbors;
+	com.y /= numNeighbors;
+	com.x = com.x - birb.x;
+	com.y = com.y - birb.y;
+	com.x /= thisWorld.movePercentage;
+	com.y /= thisWorld.movePercentage;
 	return com;
-}
 
-function calculateVel(){
-	var vel = {x:0, y:0}; //vel
-	for(var i=0; i<thisWorld.birbsArray.length;i++){
-		vel.x += thisWorld.birbsArray[i].vx;
-		vel.y += thisWorld.birbsArray[i].vy;
-	}
-
-	vel.x /= thisWorld.birbsArray.length;
-	vel.y /= thisWorld.birbsArray.length;
-	return vel;
-}
-
-function flock(birb, com){ //flocking
-	var vx = (com.x-birb.x)/thisWorld.movePercentage;
-	var vy = (com.y-birb.y)/thisWorld.movePercentage;
-	return {x: vx, y:vy};
 }
 
 function avoid(birb){
-	var vx=0;
-	var vy=0;
-	for(var i=0; i < thisWorld.birbsArray.length; i++) {
-		otherBirb = thisWorld.birbsArray[i];
-		if(birb != otherBirb){
-			if(Math.abs(otherBirb.x-birb.x) < thisWorld.comfortableDistance){
-				vx += (birb.x - otherBirb.x);
-			}
-			if(Math.abs(otherBirb.y-birb.y) < thisWorld.comfortableDistance){
-				vy += (birb.y - otherBirb.y);
-			}
+	var vel = {x:0, y:0};
+	for(var i=0; i <thisWorld.birbsArray.length; i++){
+		var otherBirb = thisWorld.birbsArray[i];
+		var dist = getDistance(birb, otherBirb);
+		if(dist < thisWorld.comfortableDistance && otherBirb != birb){
+			var force = 1/(10+dist);
+			vel.x += force * (birb.x-otherBirb.x);
+			vel.y += force * (birb.y-otherBirb.y);
 		}
 	}
-	return {x: vx/50, y:vy/50};
+	return vel;
 }
 
-function match(birb, avgVel){
-	return {x: (avgVel.x-birb.vx)/10, y: (avgVel.y-birb.vy)/10};
+function match(birb){
+	var vel = {vx : 0, vy : 0}; //holds avg vel for a birb's neighbors
+	var numNeighbors = 0;
+	for(var i=0; i<thisWorld.birbsArray.length;i++){
+		var otherBirb = thisWorld.birbsArray[i];
+		if(getDistance(birb, otherBirb) < thisWorld.bubbleSize && otherBirb != birb){
+			vel.vx += otherBirb.vx;
+			vel.vy += otherBirb.vy;
+			numNeighbors++;
+		}
+	}
+	if(numNeighbors == 0){ //no other birbs. don't move
+		return {vx:birb.vx/2, vy: birb.vy/2};
+	}
+	vel.vx /= numNeighbors;
+	vel.vy /= numNeighbors;
+	vel.vx = (vel.vx - birb.vx)/2;
+	vel.vy = (vel.vy - birb.vy)/2;
+	return vel;
 }
 
+function getDistance(birb, otherBirb){
+	return Math.abs(Math.sqrt((birb.x-otherBirb.x)*(birb.x-otherBirb.x) + (birb.y-otherBirb.y)*(birb.y-otherBirb.y)));
+}
 //etc.
