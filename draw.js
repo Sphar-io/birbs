@@ -4,7 +4,6 @@ canvas.width = Math.floor(.90*window.innerHeight); //scales canvas to avoid stre
 canvas.height = Math.floor(.90*window.innerHeight);
 var birbSize = 3;
 var thisWorld = new world(canvas.width, canvas.height);
-var maxStartSpeed = 4;
 var verbose = true;
 
 function drawBirbs(){
@@ -34,8 +33,8 @@ function drawBirbs(){
 
 function createBirbs(number){
 	for(var i=0;i<number;i++){
-		var xRand = Math.random()*thisWorld.w; //temporary, will be moved to offscreen
-		var yRand = Math.random()*thisWorld.h;
+		var xi= Math.random()*thisWorld.w; //temporary, will be moved to offscreen
+		var yi= Math.random()*thisWorld.h;
 		var vxi = Math.random()*5+5;
 		var vyi = Math.random()*5+5;
 		var thisBirb = new birb(xRand, yRand, vxi, vyi);

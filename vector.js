@@ -11,6 +11,10 @@ function vector(xi, yi){
 			this.y -= vector.y;
 	}
 	this.divide = function(num){
+			this.x *= num;
+			this.y *= num;
+	}
+	this.divide = function(num){
 			this.x /= num;
 			this.y /= num;
 	}

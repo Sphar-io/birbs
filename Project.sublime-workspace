@@ -1,0 +1,840 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"right",
+				"tmpRight"
+			],
+			[
+				"tem",
+				"templates"
+			],
+			[
+				"num",
+				"numbersList"
+			],
+			[
+				"nine",
+				"ninety"
+			],
+			[
+				"number",
+				"numberWord"
+			],
+			[
+				"ob",
+				"Object"
+			],
+			[
+				"file",
+				"file"
+			],
+			[
+				"for",
+				"fore\tfor (each)"
+			],
+			[
+				"D",
+				"DuplicateExmployeeException"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"title",
+				"title"
+			],
+			[
+				"c",
+				"cl\tclass"
+			],
+			[
+				"accout",
+				"accountNum"
+			],
+			[
+				"interest",
+				"interestRate"
+			],
+			[
+				"mont",
+				"monthlyFee"
+			],
+			[
+				"print",
+				"printAccountInfo"
+			],
+			[
+				"custom",
+				"customerName"
+			],
+			[
+				"acco",
+				"accountNum"
+			],
+			[
+				"cus",
+				"customerName"
+			],
+			[
+				"initi",
+				"initListeners"
+			],
+			[
+				"pr",
+				"println"
+			],
+			[
+				"File",
+				"Filereader"
+			],
+			[
+				"else",
+				"else"
+			],
+			[
+				"gameMde",
+				"gameModeChange"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"bg",
+				"background-color"
+			],
+			[
+				"align",
+				"text-align"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"b",
+				"bgcolor\tAttr"
+			],
+			[
+				"pause",
+				"pausePage"
+			],
+			[
+				"keypress",
+				"keypressCheck"
+			],
+			[
+				"function",
+				"function with name"
+			],
+			[
+				"addE",
+				"addEventListener(type, listener)\tEventTarget"
+			],
+			[
+				"mouse",
+				"mouseout\tEvent"
+			],
+			[
+				"add",
+				"addEventListener(type, listener)\tEventTarget"
+			],
+			[
+				"funt",
+				"function with name"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"paused",
+				"paused"
+			],
+			[
+				"game",
+				"gameMode"
+			],
+			[
+				"console",
+				"console.log()"
+			],
+			[
+				"r",
+				"result\tFileReader"
+			],
+			[
+				"futur",
+				"futureYear-updateYear"
+			],
+			[
+				"fu",
+				"futureYear-updateYear"
+			],
+			[
+				"gwo",
+				"growth"
+			],
+			[
+				"pop",
+				"population"
+			],
+			[
+				"aY",
+				"aY"
+			],
+			[
+				"width",
+				"width"
+			],
+			[
+				"a",
+				"a_canvas"
+			],
+			[
+				"fill",
+				"fillStyle"
+			],
+			[
+				"rectang",
+				"rectangles"
+			],
+			[
+				"if",
+				"if\tif"
+			],
+			[
+				"theta",
+				"theta"
+			],
+			[
+				"orig",
+				"origDepth-depth"
+			],
+			[
+				"de",
+				"depth-1"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"depth",
+				"depth"
+			],
+			[
+				"aX",
+				"aX"
+			],
+			[
+				"star",
+				"startX"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "birb.js",
+			"settings":
+			{
+				"buffer_size": 99,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "draw.js",
+			"settings":
+			{
+				"buffer_size": 1499,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vector.js",
+			"settings":
+			{
+				"buffer_size": 472,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "function world(xSize, ySize){\n\t\tthis.w = xSize;\n\t\tthis.h = ySize;\n\t\tthis.bubbleSize = 75;\n\t\tthis.repelDist = 10;\n\n\t\tthis.moveBirb = function(){\n\t\t\t\t//calculate new velocity\t\t\t\t\n\t\t\t\tfor (var i = Things.length - 1; i >= 0; i--) {\n\t\t\t\t\tThings[i];\n\t\t\t\t}\n\n\t\t\t\t//apply velocity\n\t\t\t\tfor (var i = Things.length - 1; i >= 0; i--) {\n\t\t\t\t\tThings[i];\n\t\t\t\t}\n\t\t}\n\t\tfunction attract(){\n\n\t\t}\n\n\t\tfunction repel(){\n\n\t\t}\n\n\t\tfunction match(){\n\t\t\t\n\t\t}\n}\n",
+			"file": "world.js",
+			"file_size": 369,
+			"file_write_time": 131232820991744987,
+			"settings":
+			{
+				"buffer_size": 433,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/JavaC.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				],
+				[
+					"Packages/User/JavaC.sublime-build",
+					""
+				],
+				[
+					"Packages/User/JavaC.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/JavaC.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/JavaC.sublime-build",
+					""
+				],
+				[
+					"Packages/User/JavaC.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/JavaC.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 213.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Build With: JavaC"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 571.0
+	},
+	"console":
+	{
+		"height": 176.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Jonathan/Desktop/Github/birbs/world.js",
+		"/C/Users/Jonathan/Desktop/Github/birbs/draw.js",
+		"/C/Users/Jonathan/Desktop/Github/birbs/birb.js",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project3/MultiplicationExpression.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project3/DivisionExpression.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project3/AdditionExpression.java",
+		"/C/Users/Jonathan/Desktop/Github/birbs/birbs.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Koch/script.js",
+		"/C/Users/Jonathan/Desktop/Github/birbs/vector.js",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project3/NumberConverter.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project3/Expression.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project3/NumberWord.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project3/QuestionTemplate.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project3/WordMath.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/HW4/Department.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project3/SubtractionExpression.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/HW4/DuplicateEmployeeException.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project3/InvalidQuestionException.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project3/AdditionExpress.java",
+		"/C/Users/Jonathan/Desktop/Github/birbs/Project.sublime-workspace",
+		"/C/Users/Jonathan/Desktop/Github/birbs/Project.sublime-project",
+		"/C/Users/Jonathan/Desktop/App/smart.js",
+		"/C/Users/Jonathan/Desktop/App/synaptic.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/GameOfLifeImproved/GameOfLife.html",
+		"/C/Users/Jonathan/Desktop/App/index.html",
+		"/C/Users/Jonathan/Desktop/App/package.json",
+		"/C/Users/Jonathan/Desktop/App/index.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Mondrian/piet.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Mondrian/piet.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Sphar.io/project template.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Physics-Simulator/Physics Simulator.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Physics-Simulator/world.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Physics-Simulator/particle.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Physics-Simulator/draw.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Sphar.io/index.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Sphar.io/contact.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Sphar.io/about.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Gravity/Gravity/draw.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Gravity/Gravity/Physics Simulator.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Gravity/Gravity/world.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Gravity/Gravity/particle.js",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/HW4/Faculty.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/HW4/Employee.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/HW4/test1.java",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Gravity/Gravity/ball.js",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project2/SavingsAccount.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project2/CheckingAccount.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project2/BankAccount.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project2/Bank.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/ExceptionTest.java",
+		"/C/Users/Jonathan/AppData/Roaming/Sublime Text 3/Packages/User/JavaC.sublime-build",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project2/BankAccount.class",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Gravity/Layout.txt",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Gravity/draw.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Gravity/world.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Gravity/ball.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Gravity/gravity.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Gravity/Physics Simulator.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/GameOfLifeImproved/draw.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/Gravity/gravity.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Motion Trails/gravity.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Motion Trails/gravity.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Motion Trails/Trails.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Motion Trails/trails.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/GameOfLifeImproved/betterGol.js",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/HW3/Document.java",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Art/art.html",
+		"/C/Users/Jonathan/Downloads/Gosper_glider_gun (1).cells",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/GameOfLifeImproved/patterns.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/GameOfLifeImproved/dat.gui.min.js",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/HW3/Term.java",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/gameOfLife/GOL.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/GameOfLifeImproved/GolImproved.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/gameOfLife/draw.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/gameOfLife/dat.gui.min.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Github/gameOfLife/Gol.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Game of Life/GOL.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Game of Life/Gol.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Game of Life/improved/GolImproved.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Game of Life/improved/draw.js",
+		"/C/Users/Jonathan/Google Drive/Personal/1&1 stuff/Main/index.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Game of Life/improved/betterGol.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Game of Life/improved/dat.gui.min.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Game of Life/draw.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Game of Life/betterGol.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Game of Life/GolImproved.html",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project1/Song.java",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project1/Playlist.java",
+		"/C/Users/Jonathan/Google Drive/Personal/1&1 stuff/index.html",
+		"/C/Users/Jonathan/Desktop/lol.html",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Project1/testing.java",
+		"/C/Users/Jonathan/AppData/Roaming/Sublime Text 3/Packages/User/Java.sublime-settings",
+		"/C/Users/Jonathan/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Game of Life/guiSrc.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Koch/art.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Art/art.js",
+		"/C/Users/Jonathan/Google Drive/School/CSE 17/Hw2/Species.java",
+		"/C/Users/Jonathan/AppData/Local/Temp/7zOC674.tmp/Species.java",
+		"/C/Users/Jonathan/AppData/Local/Temp/7zO5088.tmp/Species.java",
+		"/C/Users/Jonathan/AppData/Local/Temp/7zOAA92.tmp/Species.java",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Piet/piet.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Koch/script2.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Koch/lines.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Piet/piet.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Koch/lines.js",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Piet/Art.html",
+		"/C/Users/Jonathan/Google Drive/Personal/Code Projects/Piet/piet.html.gdoc",
+		"/C/Users/Jonathan/Google Drive/Code Projects/Piet/piet.js",
+		"/C/Users/Jonathan/Google Drive/Code Projects/app/app.html",
+		"/C/Users/Jonathan/Google Drive/Code Projects/app/app.js",
+		"/C/Users/Jonathan/Google Drive/Code Projects/Voting/voting.js",
+		"/C/Users/Jonathan/Google Drive/Code Projects/Voting/voting.txt",
+		"/C/Users/Jonathan/Google Drive/Code Projects/Voting/voting.html",
+		"/C/Users/Jonathan/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/Jonathan/Google Drive/Code Projects/Piet/piet.html",
+		"/C/Users/Jonathan/Desktop/Koch/lines.html",
+		"/C/Users/Jonathan/Desktop/Koch/lines.js",
+		"/C/Users/Jonathan/Desktop/Koch/script.js",
+		"/C/Users/Jonathan/Desktop/Koch/piet.js",
+		"/C/Users/Jonathan/Desktop/Koch/art.js",
+		"/C/Users/Jonathan/Desktop/Koch/art.html",
+		"/C/Users/Jonathan/Desktop/Koch/index.html",
+		"/C/Users/Jonathan/Desktop/Koch/piet.html",
+		"/C/Users/Jonathan/Google Drive/Piet/piet.html",
+		"/C/Users/Jonathan/Desktop/Koch/script2.js",
+		"/C/Users/Jonathan/Desktop/Koch/index2.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"+",
+			"vx",
+			"thisWorld.birbsArray[i]",
+			"numNeighbors",
+			"com",
+			"thisWorld.birbsArray",
+			"I",
+			"i",
+			"I",
+			"i",
+			"I",
+			"if",
+			"I",
+			"\tpublic static final int = 0;\n",
+			"left",
+			"AdditionExpression",
+			"low",
+			"numNeighbors",
+			"50",
+			"10",
+			"vel",
+			"x",
+			"birb",
+			"numNeighbors",
+			"thisWorld.birbsArray[i].x",
+			"com",
+			"comfortableDistance",
+			"thisWorld.birbsArray.length",
+			"));\n",
+			"These",
+			"ParticlesArray",
+			"ball",
+			"Ball",
+			"1",
+			"friction",
+			"vx",
+			");\n",
+			"bounceFactor",
+			"mass",
+			"thisBall",
+			"for(var i=0;i<number; i++){\n\t\tthisBall = new ball();\n\t\tthisBall.r = 52;\n\t\tthisBall.g = 73;\n\t\tthisBall.b = 94;\n\t\tthisBall.radius = 15;//Math.random()*20+5;\n\t\tthisBall.x = thisBall.radius + Math.random()*(w-thisBall.radius);\n\t\tthisBall.y = thisBall.radius + Math.random()*(h-thisBall.radius);\n\t\tvar initDirection = Math.floor(Math.random()*-180)*pi/180; //creates balls all going upwards\n\t\tvar speedMult = 5;//(Math.random()*15)+2;\n\t\tthisBall.vx = speedMult*Math.cos(initDirection);\n\t\tthisBall.vy = speedMult*Math.sin(initDirection);\n\t\tthisBall.density = 1; // in kg/m^2\n\t\tthisBall.mass = thisBall.density*Math.PI*thisBall.radius*thisBall.radius;\n\t\tballsArray.push(thisBall);\n\t}",
+			" ",
+			"System.out.println",
+			"*/\n",
+			"testing",
+			"firstBall",
+			"secondBall",
+			"firstBall",
+			"2",
+			"vy",
+			"ratio",
+			"5",
+			"ballsArray[i]",
+			"*",
+			".",
+			"pattern",
+			"pattern[0] = ",
+			"pattern",
+			"o",
+			".",
+			"1",
+			"0",
+			"o",
+			".",
+			"pattern[0] = [0,0,0,0,0,0,0];",
+			"\t\n",
+			"pattern[0] = [0,0,0,0,0,0,0];",
+			"id",
+			"1",
+			"sm",
+			"class",
+			"\t\t\t\t<",
+			"\t\t\t\t<li class=\"active\"><a href=\"http://sphar.io\">Home</a></li>\n",
+			"newValue",
+			"initialize",
+			"console.log",
+			"randomGrid",
+			"console.log",
+			"curRect",
+			"rect",
+			"console.log"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "birb.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 99,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97,
+								97
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "draw.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1499,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								296,
+								296
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "vector.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 472,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								167,
+								167
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "world.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								430,
+								371
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 202.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 142.0
+	},
+	"pinned_build_system": "Packages/User/JavaC.sublime-build",
+	"project": "Project.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
