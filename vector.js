@@ -28,4 +28,7 @@ function vector(xi, yi){
 			this.divide(mag);
 		}
 	}
+	this.getDistance = function(vector){
+		return Math.sqrt((this.x-vector.x)*(this.x-vector.x) + (this.y-vector.y)*(this.y-vector.y));
+	}
 }
