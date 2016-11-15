@@ -10,21 +10,20 @@ function drawBirbs(){
 	ctx.fillStyle = "rgba(253,249,243, 0.35)";
 	ctx.fillRect(0,0,canvas.width, canvas.height);
 	ctx.fillStyle = "#161515";
-	for(var i=0; i<thisWorld.birbsArray.length; i++){
-		var thisBirb = thisWorld.birbsArray[i];
+	for(let birb of thisWorld.birbsList){
 		ctx.beginPath();
-		ctx.arc(thisBirb.x,thisBirb.y,birbSize,0,2*Math.PI);
+		ctx.arc(birb.pos.x,birb.pos.y,birbSize,0,2*Math.PI);
 		ctx.closePath();
 		ctx.fill();
 		if(verbose){
 			ctx.strokeStyle = "rgba(0,0,0,0.5)";
 			ctx.beginPath();
-			ctx.arc(thisBirb.x,thisBirb.y,thisWorld.bubbleSize,0,2*Math.PI);
+			ctx.arc(birb.pos.x,birb.pos.y,thisWorld.bubbleSize,0,2*Math.PI);
 			ctx.closePath();
 			ctx.stroke();
 			ctx.strokeStyle = "rgba(255,0,0,0.5)";
 			ctx.beginPath();
-			ctx.arc(thisBirb.x,thisBirb.y,thisWorld.comfortableDistance,0,2*Math.PI);
+			ctx.arc(birb.pos.x,birb.pos.y,thisWorld.repelDist,0,2*Math.PI);
 			ctx.closePath();
 			ctx.stroke();
 		}
@@ -33,13 +32,12 @@ function drawBirbs(){
 
 function createBirbs(number){
 	for(var i=0;i<number;i++){
-		var xi= Math.random()*thisWorld.w; //temporary, will be moved to offscreen
-		var yi= Math.random()*thisWorld.h;
-		var vxi = Math.random()*5+5;
-		var vyi = Math.random()*5+5;
-		var thisBirb = new birb(xRand, yRand, vxi, vyi);
-		console.log(thisBirb);
-		thisWorld.birbsArray.push(thisBirb);
+		var xi= thisWorld.h/2;//Math.random()*thisWorld.w; //temporary, will be moved to offscreen
+		var yi= thisWorld.h/2;//Math.random()*thisWorld.h;
+		var vxi = 0;//Math.random()*2+1;
+		var vyi = 0;//Math.random()*2+1;
+		var thisBirb = new birb(xi, yi, vxi, vyi);
+		thisWorld.birbsList.push(thisBirb);
 	}
 }
 
@@ -48,5 +46,5 @@ function update(){
 	drawBirbs();
 	requestAnimationFrame(update);
 }
-createBirbs(80);
+createBirbs(1);
 update();
